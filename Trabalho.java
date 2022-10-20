@@ -1,4 +1,4 @@
-package apppoo;
+package app;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public class Trabalho {
         public String titulo;
         public int curtidas;
         public int downloads;
-        public ArrayList<String> comentarios;
+        public ArrayList<String> comentarios = new ArrayList<String>();
         
         Trabalho(int id, String areaAtuacao, Aluno aluno, String conteudoTrabalho, String titulo){
             this.id = id;
@@ -61,6 +61,12 @@ public class Trabalho {
         return comentarios;
     }
 
-       
-        
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+            
 }
