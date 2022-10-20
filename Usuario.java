@@ -1,26 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package apppoo;
+package app;
 
-/**
- *
- * @author alunodev07
- */
 public abstract class Usuario {
     public int matricula;
     public String nome;
 
     
-    public void Curtir(Trabalho qualTrabalho){
-       qualTrabalho.curtidas = qualTrabalho.curtidas + 1;
+    public void Curtir(Trabalho qualTrabalho){        
+        qualTrabalho.curtidas = qualTrabalho.curtidas + 1;
+      
     }
     
-    public void Comentar(String comentario){
+    public void RemoverCurtida(Trabalho qualTrabalho){
+        qualTrabalho.curtidas = qualTrabalho.curtidas - 1;
+    }
+    
+    public void Comentar(String comentario, Trabalho qualTrabalho){
+        //String nomeUser = this.nome;
+        //comentariou = nomeUser;
+        qualTrabalho.comentarios.add(this.nome+": "+comentario);
+    }
         
-    }
-    
     public void VisualizarTrabalho(Trabalho trab){
         
         System.out.println("Titulo: "+trab.titulo);
@@ -29,10 +28,12 @@ public abstract class Usuario {
         System.out.println("Trabalho: "+trab.getConteudoTrabalho());
         System.out.println("Curtidas: "+trab.getCurtidas());
         System.out.println("Comentarios: "+trab.getComentarios());
+        System.out.println("Downloads: "+trab.downloads);
     }
     
     public void Download(Trabalho trab){
         System.out.println("Voce executou o download do trabalho "+'"'+trab.titulo+'"'+".");
+        trab.downloads += 1;
     }
 
     public int getMatricula() {
