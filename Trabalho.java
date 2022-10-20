@@ -10,7 +10,7 @@ public class Trabalho {
         public String titulo;
         public int curtidas;
         public int downloads;
-        public ArrayList comentarios;
+        public ArrayList<String> comentarios;
         
         Trabalho(int id, String areaAtuacao, Aluno aluno, String conteudoTrabalho, String titulo){
             this.id = id;
@@ -20,6 +20,7 @@ public class Trabalho {
             this.titulo = titulo;
             this.curtidas = 0;
         }
+        
         Trabalho(){
             
         }
