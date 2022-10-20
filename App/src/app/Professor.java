@@ -19,8 +19,12 @@ public class Professor extends Usuario{
         
     }
     
-    public void editarTrabalho(){
-        
+    public void editarTrabalho(Trabalho qualTrabalho, int id, String areaAtuacao, Aluno aluno, String conteudoTrabalho, String titulo){
+        qualTrabalho.id = id;
+        qualTrabalho.areaAtuacao = areaAtuacao;
+        qualTrabalho.aluno = aluno;
+        qualTrabalho.conteudoTrabalho = conteudoTrabalho;
+        qualTrabalho.titulo = titulo;
     }
     
 }

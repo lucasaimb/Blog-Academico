@@ -22,7 +22,8 @@ public class App{
         c1.Curtir(t1);
         c1.RemoverCurtida(t1);
         a1.VisualizarTrabalho(t1);
-       
+        p1.editarTrabalho(t1, 23223, "Tecnologias futuristicas", a2, "Esse e o novo conteudo", "Tecnologia brasileira futuristica");
+        p1.VisualizarTrabalho(t1);
         
     }
     
