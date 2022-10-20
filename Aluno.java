@@ -1,9 +1,7 @@
-package app;
-
 public class Aluno extends Usuario{ 
     
     public String curso;
-    public Trabalho t;
+    public Trabalho trabalho;
     
     
     public Aluno() {
@@ -17,10 +15,9 @@ public class Aluno extends Usuario{
         this.curso = curso;       
     }
     
-    void CriarTrabalho(){
+    void CriarTrabalho(int id, String area, String conteudo, String titulo){
       
-        
-        
+        trabalho = new Trabalho(id, area, this, conteudo, titulo);
         
     }
     
