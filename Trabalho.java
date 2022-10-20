@@ -1,5 +1,3 @@
-package app;
-
 import java.util.ArrayList;
 
 public class Trabalho {
@@ -68,5 +66,8 @@ public class Trabalho {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-            
+    
+
+       
+        
 }
