@@ -1,8 +1,8 @@
-package apppoo;
+package app;
 
 public class Aluno extends Usuario{ 
+    
     public String curso;
-
     public Trabalho t;
     
     
@@ -18,8 +18,10 @@ public class Aluno extends Usuario{
     }
     
     void CriarTrabalho(){
+      
         
-        t = new Trabalho();
+        
+        
     }
     
     
