@@ -1,6 +1,9 @@
-package app;
+import java.util.ArrayList;
 
 public class Professor extends Usuario{
+
+    Trabalho trabalhoParaPostar;
+    ArrayList<Trabalho> trabalhosJaPostados;
 
     public Professor() {
     }
@@ -10,13 +13,26 @@ public class Professor extends Usuario{
     public Professor(String nome, int matricula) {
         this.nome = nome;
         this.matricula = matricula;
-    }    
+    }
     
+    public void PostarTrabalho(Trabalho trabalho, ArrayList<Trabalho> trabalhosJaPostados){
+
+        trabalhosJaPostados.add(trabalho);
+    }
     
-    //MÉTODOS
-    
-     public void uparTrabalho(Trabalho qualquerTrabalho){
-        
+    public void ListarTrabalhosPostados(ArrayList<Trabalho> listaTrabalhos){
+
+        for (Trabalho trabalho : listaTrabalhos) {
+            
+            System.out.println("Dados do trabalho postado:");
+            System.out.println("Id: " + trabalho.id);
+            System.out.println("Título: " + trabalho.titulo);
+            System.out.println("Aluno responsável: " + trabalho.aluno.nome);
+            System.out.println("Área de atuação: " + trabalho.areaAtuacao);
+            System.out.println("Conteúdo: " + trabalho.conteudoTrabalho);
+            System.out.println("Curtidas: " + trabalho.curtidas);
+            System.out.println("Downloads: " + trabalho.downloads);
+        }
     }
     
     public void editarTrabalho(Trabalho qualTrabalho, int id, String areaAtuacao, Aluno aluno, String conteudoTrabalho, String titulo){
