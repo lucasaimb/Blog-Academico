@@ -1,4 +1,4 @@
-package apppoo;
+package app;
 
 public class Coordenador extends Professor{
     public String curso;
@@ -14,6 +14,7 @@ public class Coordenador extends Professor{
     }
     
     public void bloquearAluno(){
+        
         
     }
     
