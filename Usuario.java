@@ -1,5 +1,3 @@
-package app;
-
 public abstract class Usuario {
     public int matricula;
     public String nome;
