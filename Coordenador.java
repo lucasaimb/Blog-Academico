@@ -1,5 +1,3 @@
-package app;
-
 public class Coordenador extends Professor{
     public String curso;
 
