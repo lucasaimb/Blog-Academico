@@ -1,3 +1,5 @@
+package app;
+
 import java.util.ArrayList;
 
 public class Trabalho {
@@ -10,6 +12,12 @@ public class Trabalho {
         public int downloads;
         public ArrayList<String> comentarios = new ArrayList<String>();
         
+        // Construtor padrao
+        public Trabalho(){
+            
+        }
+        
+        // Construtor completo
         Trabalho(int id, String areaAtuacao, Aluno aluno, String conteudoTrabalho, String titulo){
             this.id = id;
             this.areaAtuacao = areaAtuacao;
@@ -18,11 +26,9 @@ public class Trabalho {
             this.titulo = titulo;
             this.curtidas = 0;
         }
-        
-        Trabalho(){
-            
-        }
 
+       
+    // Getters e Setters
     public int getId() {
         return id;
     }
