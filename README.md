@@ -1,4 +1,4 @@
-# POO
+# Blog-Acadêmico
 ## Descrição do projeto
   Esse projeto foi um trabalho realizado por mim e mais um colega de classe,
   o objetivo do projeto era criar um algoritimo em Java de acordo com o briefing e o diagrama de classes fornecida pelo professor, porem foi dada a liberdade na tomada de decisões dentro do projeto.
