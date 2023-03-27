@@ -18,3 +18,5 @@ inadequados) e retirar uma publicação do ar.
 **Matéria:** Programação Orientada a Objetos I
 
 **Professor:** Vinicius Rosalen
+
+**Data de entrega:** 21/10/2022
